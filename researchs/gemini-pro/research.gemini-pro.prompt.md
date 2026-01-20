@@ -6,6 +6,13 @@
 
 5. Time frame: 2024-2026
 Focus: Ubuntu/Debian ecosystem
+
 CONSTRAINTS:
 - Exclude: Windows-only tools
 - Prioritize: Open-source, actively maintained
+
+<OUTPUT_FORMAT>
+Format: Structured report with comparison tables
+Sections: Security Tools, DevOps Tools, Side-by-side comparison, Installation best practices
+</OUTPUT_FORMAT>
+"""
