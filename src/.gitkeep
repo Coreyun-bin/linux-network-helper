@@ -1,0 +1,7 @@
+def main():
+    print("Linux Network Helper çalışıyor.")
+    # Buraya terminal otomasyon kodları eklenecek
+    pass
+
+if _name_ == "_main_":
+    main()
