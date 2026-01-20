@@ -1,9 +1,10 @@
 # Prompts for claude
+
 Principles: Extreme explicitness - Claude is literal., Use XML structure (<context>, <task>)., Enable extended thinking for complexity., Explain WHY the task matters (reasoning motivation).
 Target Format: <output_requirements> <format>Prose/Structured</format> <structure>...</structure> </output_requirements>
 
 Reference Example (Claude 4.x Style):
-"""
+
 <context>
 <background>Managing 50 Linux servers (Ubuntu/RHEL) with microservices. Experiencing performance issues.</background>
 <goals>Automated monitoring, Disk cleanup, Resource alerting</goals>
