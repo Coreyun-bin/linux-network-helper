@@ -1,0 +1,33 @@
+Principles: Universal format for any Deep Search AI., Production-grade deployment focus., Comprehensive lifecycle coverage., Infrastructure as Code emphasis.
+Target Format: Complete Deliverables Needed: 1. ... 2. ...
+
+Reference Example (Universal SysAdmin Style):
+"""
+[FOR ANY DEEP SEARCH AI]
+
+Research Request: Complete Production Deployment System for Multi-Stack Applications (React, Next, Node, Python)
+
+**Infrastructure Context**:
+Cloud: AWS
+Container: K8s
+CI/CD: GitHub Actions
+Scale: 20 microservices
+
+**Complete Research Scope**:
+A. ReactJS Production Pipeline (Debug, Build, Deploy)
+B. NextJS Pipeline
+C. Node.js Backend
+D. Python Apps
+Package Auditing Requirements
+
+**Complete Deliverables Needed**:
+1. GitHub Actions Workflow Library
+2. Docker Configuration
+3. K8s Manifests
+4. Infrastructure as Code
+5. Monitoring Setup
+"""
+
+
+OUTPUT REQUIREMENT:
+Provide the 12 distinct prompts in separate code blocks, clearly labeled with the model name.
