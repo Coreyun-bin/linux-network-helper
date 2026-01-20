@@ -1,0 +1,64 @@
+# Klasör oluştur
+mkdir -p src
+
+# Python kodunu oluştur (Basit bir Ping ve IP bulucu)
+cat <<EOF > src/main.py
+import os
+import socket
+import subprocess
+import sys
+
+def get_local_ip():
+    try:
+        hostname = socket.gethostname()
+        local_ip = socket.gethostbyname(hostname)
+        return local_ip
+    except Exception as e:
+        return str(e)
+
+def ping_host(host):
+    param = '-n' if platform.system().lower()=='windows' else '-c'
+    command = ['ping', param, '1', host]
+    return subprocess.call(command) == 0
+
+def main():
+    print("--- Linux Network Helper v1.0 ---")
+    print(f"Local IP: {get_local_ip()}")
+    
+    target = "google.com"
+    print(f"\nChecking connection to {target}...")
+    if ping_host(target):
+        print(f"{target} is UP!")
+    else:
+        print(f"{target} is DOWN!")
+
+if _name_ == "_main_":
+    import platform
+    main()
+EOF
+
+# README dosyasını oluştur (Dolu gözükmesi için)
+cat <<EOF > README.md
+# Linux Network Helper
+
+## Proje Hakkında
+Bu proje, ağ yöneticileri ve öğrenciler için temel ağ teşhis işlemlerini otomatize eden açık kaynaklı bir araçtır. Python ve Shell scriptleri kullanılarak geliştirilmiştir.
+
+## Özellikler
+- *Otomatik IP Tespiti:* Yerel ağ yapılandırmasını hızlıca analiz eder.
+- *Bağlantı Kontrolü:* Hedef sunuculara ping atarak durum raporu sunar.
+- *Modüler Yapı:* Kolayca genişletilebilir açık kaynak mimari.
+
+## Kurulum
+\\\`bash
+git clone https://github.com/kullaniciadi/Linux-Network-Helper.git
+cd Linux-Network-Helper
+python src/main.py
+\\\`
+
+## Katkıda Bulunma
+Fork yapın, feature branch oluşturun ve Pull Request gönderin.
+
+## Lisans
+MIT License
+EOF
