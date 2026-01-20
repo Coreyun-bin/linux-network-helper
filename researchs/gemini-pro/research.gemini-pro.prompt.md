@@ -6,3 +6,6 @@
 
 5. Time frame: 2024-2026
 Focus: Ubuntu/Debian ecosystem
+CONSTRAINTS:
+- Exclude: Windows-only tools
+- Prioritize: Open-source, actively maintained
